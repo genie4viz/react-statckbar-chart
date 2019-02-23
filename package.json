@@ -1,38 +1,31 @@
 {
-  "name": "d3-rect",
+  "name": "react-d3-redux",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://eesur.github.io/d3-react-redux-boilerplate",
   "dependencies": {
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "node-sass-chokidar": "^1.3.0",
-    "prop-types": "^15.6.1",
-    "react": "^16.3.2",
-    "react-app-polyfill": "^0.1.3",
-    "react-dom": "^16.3.2",
-    "react-scripts": "2.0.1",
-    "react-test-renderer": "^16.4.2",
-    "recharts": "^1.0.0-beta.10"
+    "@vx/axis": "0.0.146",
+    "@vx/group": "0.0.143",
+    "@vx/scale": "0.0.143",
+    "@vx/shape": "0.0.146",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "react-scripts": "1.0.17",
+    "rebass": "^1.0.4",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-promise": "^0.5.3",
+    "redux-thunk": "^2.2.0"
   },
   "scripts": {
-    "build-css": "node-sass-chokidar src/ -o src/",
-    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "cypress:open": "cypress open",
-    "jest": {
-      "setupTestFrameworkScriptFile": "<rootDir>/src/setupTests.js"
-    }
+    "deploy": "npm run build&&gh-pages -d build"
   },
   "devDependencies": {
-    "cypress": "^2.1.0"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+    "gh-pages": "^1.0.0"
+  }
 }
