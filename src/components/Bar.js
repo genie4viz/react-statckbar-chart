@@ -62,7 +62,7 @@ const BarGraph = (props) => {
     margin,
     fill,
     data
-  } = props
+  } = props;
 
   // create some bounds
   const xMax = width - margin.left - margin.right

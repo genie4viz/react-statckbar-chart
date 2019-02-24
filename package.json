@@ -8,6 +8,7 @@
     "@vx/group": "0.0.143",
     "@vx/scale": "0.0.143",
     "@vx/shape": "0.0.146",
+    "bulma": "^0.7.4",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-redux": "^5.0.6",
